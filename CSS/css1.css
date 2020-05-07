@@ -1,0 +1,22 @@
+/*
+selected tag{
+    property:value;
+}*/
+
+h1{
+    color: blue;
+}
+
+li{
+/*    color: green;*/
+    color: rgb(8,84,1);
+}
+
+p{
+    color: #0895a8
+}
+
+h4{
+   color: rgba(8,84,1,01);
+/* rgb and alpha*/
+}

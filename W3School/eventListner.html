@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+#myDiv1, #myDiv2,#div3{
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+    padding: 50px;
+    margin: auto;
+}
+#p1, #p2{
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    padding: 10px;
+}
+#btnid2{
+    height: 20px;
+    width: 30px;
+    background-color: orchid;
+}
+    </style>
+</head>
+<body>
+    <button id="btnid">click me!</button>
+<p id="demo"></p>
+<p id="windowsize"></p>
+
+<!-- //bubling and capturing -->
+<div id="myDiv1">
+<h2>Bubbling:</h2>
+<p id="p1">Click me</p>
+</div><br>
+<div id="myDiv2">
+    <h2>Capturing:</h2>
+    <p id="p2">Click me</p>
+    </div><br>
+
+<div id="div3">
+    <p>When we click or mouse over on it it will show us a random number</p>
+    <br>
+    <button id=btnid3 onclick="start(this)">Start</button>
+
+    <button id="bntid2" onclick="remove(this)">Remove</button>
+</div>
+<p id="p3"></p>
+    <script>
+        // document.getElementById("btnid").addEventListener("click",displayDate);
+        document.getElementById("btnid").addEventListener("click",()=>{
+            document.getElementById("demo").innerHTML=Date();
+        });
+
+        window.addEventListener("resize",()=>{
+            document.getElementById("windowsize").innerHTML="Window has been resized";
+        });
+//Bubnling and capturing
+document.getElementById("myDiv1").addEventListener("click",()=>{
+    alert("You click inner first then outer its orange");
+},false);
+document.getElementById("p1").addEventListener("click",()=>{
+    alert("You click inner first then outer its white");
+},false);
+document.getElementById("myDiv2").addEventListener("click",()=>{
+    alert("You click outer first then inner its orange");
+},true);
+document.getElementById("p2").addEventListener("click",()=>{
+    alert("You click outer first then inner its white");
+},true);
+
+
+// listnerRemove
+
+
+document.getElementById("div3").addEventListener("mousemove",myFun);
+function myFun(){
+        document.getElementById("p3").innerHTML=Math.random();
+}
+
+
+function remove(id){
+    document.getElementById("div3").removeEventListener("mousemove",myFun);
+
+}
+//         function displayDate(){
+// document.getElementById("demo").innerHTML=Date();
+//         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+h1{
+    font-family: 'Dancing Script', cursive;
+text-align: center;
+font-size: 30px;
+}
+
+.art{
+    margin: auto;
+}
+
+td{
+    text-align: center;
+    background-color: black;
+    height: 350px;
+    width: 150px;
+   border: 6px solid white;
+}
+#col1{
+    background-color: #0466C8;
+    
+}
+#col2{
+    background-color: #0353A4;
+    
+}
+#col3{
+    background-color: #023E7D;
+    
+}
+#col4{
+    background-color: #001845;
+    
+}
+#col5{
+    background-color: #33415C;
+    
+}
+#col6{
+    background-color: #979DAC;
+    
+}
+
+    
+    
+    
+    
+

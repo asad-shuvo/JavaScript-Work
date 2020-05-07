@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pid1{
+            width: 60%;
+            position: relative;
+            color: rebeccapurple;
+            font-size: xx-large;
+            border: rosybrown solid 2px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<p id="pid1"></p>
+
+    <script>
+        let d=new Date();
+        let fun=()=>{
+            document.getElementById('pid1').innerHTML=`${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}  ${d.getHours()} ${d.getMinutes()} ${d.getSeconds()}`;
+            document.getElementById('pid1').innerHTML=Date();
+      var t=setTimeout(function(){
+          fun()
+      }, 1000);
+        }
+        
+        fun();
+    </script>
+</body>
+</html>

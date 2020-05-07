@@ -1,0 +1,29 @@
+body{
+    background-color: cornflowerblue;
+}
+h1{
+    border: 2px solid;
+}
+
+h3{
+    color: crimson;
+}
+#listOne{
+    color: crimson;
+    text-decoration-line: overline;
+}
+#email{
+    color: violet;
+    border: 5px solid red;
+}
+#password{
+    color: violet;
+    border: 5px solid red;
+}
+.divClass{
+    background-color: blue;
+    border: 2px dotted yellow;
+}
+#pid{
+    background-color: yellow;
+}

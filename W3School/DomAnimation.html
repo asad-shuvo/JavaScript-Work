@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#container{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background-color: yellow;
+}
+
+#animate{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-color: red;
+}
+#animate2{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-color: green;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <h1>Here is an animation program</h1>
+    <button onclick="myMove()">Click me!</button>
+
+    <div id="container">
+<div onclick="myMove()" id="animate"></div>
+<div onclick="myMove()" id="animate2"></div>
+    </div>
+
+    <script>
+        function myMove(){
+       let element = document.getElementById("animate");
+       let element2=document.getElementById("animate2");
+            let pos=0;
+            var id=setInterval(frame,5);
+
+            function frame(){
+                if(pos== 350){
+                    clearInterval(id);
+                }
+                else{
+                    pos++;
+                    element.style.top=pos+'px';
+                    element.style.left=pos+'px';
+
+                    element2.style.top=pos+'px';
+                    element2.style.right=pos+'px';
+                }
+            }
+    }
+    </script>
+</body>
+</html>

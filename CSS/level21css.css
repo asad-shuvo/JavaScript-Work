@@ -1,0 +1,23 @@
+h1{
+    font-family: "Arial";
+}
+p{
+    font-family: monospace;
+}
+
+/* default 1em=16 px */
+body{
+    font-size: 20px;
+}
+
+#two{
+    font-size: 1.0em;
+}
+p{
+   font-family: 'Bangers', cursive;
+    font-style: italic;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+}

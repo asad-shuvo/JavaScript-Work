@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body onload="checkCookies()">
+
+<p id="demo"></p>
+
+<!-- onchange -->
+<input type="text" value="" id="text1" onchange="myFunction(this)">
+
+<!-- onmouseover onmuseout -->
+
+<div onmouseover="mover(this)" onmouseout="mout(this)" onmouseup="mouseUp(this)" onclick="click(id)" onmousedown="mousedown(this)"
+style="background-color:red; width:300px;height:300px;padding:40px;"></div>
+<div>
+
+    <img onmousedown="lightOn(this)" onmouseup="lightOff(this)" src="lightOff.jpg" alt="pic not found" width="300px" height="300px">
+
+</div>
+
+<script>
+function lightOn(id){
+    id.src="lighton.jpg";
+}
+
+function lightOff(id){
+    id.src="lightOff.jpg";
+}
+
+
+function mousedown(id){
+    id.innerHTML="Mouse down";
+}
+function mouseUp(id){
+    id.innerHTML="Mouse UP";
+}
+
+function click(id){
+    id.innerHTML="Mouse clicked";
+}
+
+
+function mover(id){
+    id.innerHTML="Thank you";
+}
+function mout(id){
+    id.innerHTML="mover here";
+}
+
+
+    function myFunction(id){
+        id.value= id.value.toUpperCase();
+    }
+function checkCookies() {
+  var text = "";
+  if (navigator.cookieEnabled == true) {
+    text = "Cookies are enabled.";
+  } else {
+    text = "Cookies are not enabled.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
