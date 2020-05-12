@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h2>JavaScript</h2>
+
+<h3>The window.location object</h3>
+
+<input type="button" value="click for new page" name="" id="" onclick="newDoc()">
+    <script>
+document.getElementById("demo").innerHTML =
+"Page location is " + window.location.href+"<br>"+"Page hostname is " + window.location.hostname
++" <br>"+"Page path is " + window.location.pathname+
+"<br> "+"Page protocol is " + window.location.protocol+" <br>"+
+"Port number is " + window.location.port+" ";
+
+function newDoc(){
+    window.location.assign("https://www.w3schools.com");
+}
+    </script>
+</body>
+</html>

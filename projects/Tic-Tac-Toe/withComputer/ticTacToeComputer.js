@@ -36,7 +36,10 @@ let init = (option)=>{
 
 let humanVsHuman=()=>{
 
-    init('human');
+   // init('human');
+   for(let i=0;i<9;i++){
+    document.getElementById("wb"+i).src="whiteBackground.jpg";
+   }
     
 let imageType = ()=>{
     let imgName;
@@ -156,9 +159,12 @@ for(let i=0;i<9;i++){
 }
 
 let humanVsComputer=()=>{
-    init('computer');
+    //init('computer');
     // if(flag2===1)humanVsComputer();
     //Determine which type of image will be used
+    for(let i=0;i<9;i++){
+        document.getElementById("wb"+i).src="whiteBackground.jpg";
+       }
 let imageType = ()=>{
     let imgName;
     if(cnt%2===0){

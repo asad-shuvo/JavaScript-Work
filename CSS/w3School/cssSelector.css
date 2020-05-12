@@ -1,0 +1,38 @@
+/* .center{
+    text-align: center;
+    color: red;
+} */
+/* if only we want a certain element  */
+/* universal selector */
+h1 {
+    text-align: center;
+    color: red;
+  }
+  
+  h2 {
+    text-align: center;
+    color: red;
+  }
+  
+  p {
+    text-align: center;
+    color: red;
+  }
+
+  /* same as */
+  /* h1, h2, p {
+    text-align: center;
+    color: red;
+  } */
+
+* {
+    text-align: center;
+    color: blue;
+  }
+p.center{
+    text-align: center;
+    color: red; 
+}
+p.large{
+    font-size: 300%;
+}

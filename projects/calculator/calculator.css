@@ -1,0 +1,23 @@
+body{
+    background-color: #EEE8E7;
+}
+table{
+    border: 1px;
+    background-color: #F6EDEB;
+}
+div{
+    position: relative;
+    margin: auto;
+    /* top right bootm left */
+    padding: 20px 20px 50px 500px;
+}
+td{
+    margin: auto;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 30px;
+}
+
+

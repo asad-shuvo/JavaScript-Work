@@ -1,0 +1,155 @@
+
+* {
+    box-sizing: border-box;
+  }
+#img1{
+    float: left;
+}
+#img2{
+    float: right;
+}
+input {
+    padding-left: 0px;
+    background-color: #f1f1f1;
+    outline: 0;
+    width: 320px;
+    border-width: 0 0 2px;
+    border-color: #727781
+  }
+  input:focus {
+    border-color: #00acee
+  }
+.low{
+    font-size: 14px;
+    color: gray;
+    text-align: left;
+    padding-right: 5px;
+}
+#ulid1{
+    color: gray;  
+}
+header {
+  
+    width: 100%;
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+    border-bottom: solid 1px #d3d7de;
+    border-width: 100%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+   
+  }
+  .arrow{
+      float: left;
+    
+  }
+  /* Create three equal columns that floats next to each other */
+.column {
+    /* border: thin rebeccapurple; */
+    /* border-right: thin red; */
+  float: left;
+  /* width: 33.33%; */
+  padding: 15px;
+}
+button:hover{
+    /* background-color: tomato; */
+    background-color: #4CAF50;
+  /* color: white; */
+    /* color: #b6f0f2; */
+}
+.divclass1{
+    padding-top: 3px;
+    font-style: bold;
+    border-bottom: 1px solid #d3d7de;
+    width: auto;
+}
+.divclass2{
+    font-style: bold;
+    border-bottom: 8px solid #d3d7de;
+    width: auto;
+}
+.divclass3{
+    border-bottom: 1px solid #d3d7de;
+    width: auto;
+}
+.rightdivmain{
+    border: 1px solid #d3d7de;
+}
+.header{
+    border-bottom: 1px solid #d3d7de;
+    width: 2000px;
+}
+.column.left{
+    border-right: 1px solid #d3d7de;
+   height: 1000px;
+    width: 14%;
+
+    
+}
+.column.middle{
+    font-family: arial;
+
+    /* font-weight: 900; */
+    border-right: 1px solid #d3d7de;
+    height: 1000px;
+    width: 45%;
+}
+.column.right{
+
+    width: 27%;
+}
+/* .vr {
+    width:10px;
+    background-color:#000;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:150px;
+} */
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+} */
+a:link {
+    color:#00acee;
+    text-decoration: none;
+  
+  }
+ #aid:link{
+     font-size: 15px;
+     color: wheat;
+    text-decoration: none;
+ } 
+ #aid:hover{
+    color: #00acee;
+    text-decoration: underline;
+ }
+  /* visited link */
+  a:visited {
+    color: #00acee;
+    text-decoration: none;
+  
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #00acee;
+    text-decoration: underline;
+  
+  }
+  
+  /* selected link */
+a:active{
+    color: #00acee;
+    text-decoration: none;
+}
