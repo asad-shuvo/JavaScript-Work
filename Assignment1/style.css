@@ -53,7 +53,7 @@ a:link {
 
 
 
-/* Create three equal columns that floats next to each other */
+
 .column {
   float: left;
 
@@ -137,7 +137,7 @@ padding: 5pt;
 border: 2px solid silver;
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
