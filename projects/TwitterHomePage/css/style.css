@@ -1,8 +1,27 @@
-
+html{
+    overflow: scroll;
+}
+.modal {
+    overflow-wrap: break-word;
+    overflow: scroll;
+  display:none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
 * {
     box-sizing: border-box;
     overflow-wrap: break-word;
+    overflow: hidden;
+    /* overflow-wrap: initial; */
   }
+
+  
 
   p{
       text-align: center;
@@ -102,14 +121,23 @@ textarea:focus{
     width: 27%;
 }
 
-
+div{
+    overflow-wrap: break-word;
+}
 .line{
+    /* overflow: hidden; */
     width: 610px;
-    height: 0px;
-    border-bottom: 1px solid #d3d7de;
+    height: 0px; 
+    border-bottom:  1px solid #d3d7de;
     padding-bottom: 10px;
-    /* margin: auto; */
-    position: absolute;
+     /* padding-top: 10px;  */
+     /* margin: auto;  */
+     position: absolute;  
+        
+     display: flex;
+     align-items: center;
+  justify-content: center;
+    
     }
 .displayBlock{
  min-width: 50vh;
@@ -158,28 +186,31 @@ textarea:focus{
     width: 300px; 
     height: 40px;
     border: none;
-
+    
      background-color: #f1f1f1;
      /* border-radius: 22px;  */
      text-align: left ; 
     /* border: solid #f7f9faef 1px; */
+    
+    outline: 0 !important;
+    outline-offset: 0  !important;
+    background-image: none  !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none  !important;
   }
-  .modal {
-      overflow-wrap: break-word;
-	display:none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
+   .diplsyComment{
+       overflow:hidden;
+       border-bottom: 1px solid #d3d7de; 
+      /* background-color: #f1f1f1; */
+      padding-top: 10px;
+      /* overflow: scroll; */
+      /* margin: auto; */
+  } 
+ 
 
 /* Modal Content Box */
 .modal-content {
-    
+    overflow: scroll;
     background-color: #fefefe;
     margin: 4% auto 15% auto;
     border: 1px solid #888;

@@ -37,8 +37,9 @@ const list = document.querySelector('.post-list');
 const row = document.createElement('div');
 const L= document.createElement('div');
 
-let tble =document.createElement('tr');
 
+let tble =document.createElement('tr');
+tble.classList="tableClass";
 
 
 // let cnt=0, cntC=0;
@@ -56,14 +57,9 @@ list.append(L);
 
 }
 
-///For Handling the comment section
-static myFuncomment(id,idPost){
-  currentComment=idPost;
-// console.log("idpost   "  +idPost+"   "+id);
-  
-  //pop up window
-  document.getElementById('modal-wrapper').style.display='block';
 
+
+static commentDisplayFromStorge(currentComment,idPost){
   let actualPost,pos;
   let comments;
   let post=Storage.getPosts();
@@ -92,7 +88,19 @@ static myFuncomment(id,idPost){
     }
     
   }
+}
+
+
+///For Handling the comment section
+static myFuncomment(id,idPost){
+  currentComment=idPost;
+// console.log("idpost   "  +idPost+"   "+id);
   
+  //pop up window
+  document.getElementById('modal-wrapper').style.display='block';
+
+  
+  UI.commentDisplayFromStorge(currentComment,idPost);
   // console.log(comments);
     
  //Handle new comments, store ,post.
@@ -112,7 +120,7 @@ static myFuncomment(id,idPost){
           // console.log("idpost "+idPost+ " current Comment "+currentComment);
           
           // console.log("pos " +post[i].id+"   idPost "+idPost+"  tktk"+tktk);
-          
+          // document.querySelector('.btnComment').innerHTML= `${post.comment} ${post.commentCollections.length}';          
           let postPos=post[i].commentCollections;
           postPos.push(value);
           let p = new Post(post[i].post,post[i].comment,post[i].like,post[i].id,postPos); 
