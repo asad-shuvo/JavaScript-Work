@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log();
+        let obj={
+            name:"abc",
+            oc:"business"
+        }
+        console.log(obj.name);
+        let x=10;
+        let y=10;
+        console.log(x,"  ",x++);
+        console.log(y, " ", ++y);
+        console.log(10=="10");
+        console.log(10==="10");
+        let tmp=(x===y)?true:false;
+        console.log(tmp);
+        let arr=[1,2,3,'Bob','brat'];
+        console.log(arr);
+        arr.push(2222);
+        console.log(arr);
+        arr.pop();
+        console.log(arr);
+        arr.shift();
+        console.log(arr);
+        arr.unshift(33,44);
+        console.log(arr);
+        arr.splice(0,2,"Duck","mice");
+        console.log(arr);
+        arr.splice(0,0,"Duck2","mice2");
+        console.log(arr);
+let newArr=arr.slice(2,4);
+for( x of newArr){
+    console.log(x+" ");
+    
+}
+console.log(newArr);
+
+
+        
+        
+    </script>
+</body>
+</html>

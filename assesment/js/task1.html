@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray=[3,4,11,34,120,31,56,36,101,99,98,23];
+        let secondLargestAndSmalles=function(myArray){
+            let firstMax=0;
+            let secondMax=0;
+            let firstSmall=999999999;
+            let secondSmall=999999999;
+
+            for(let x of myArray){
+                if(x<firstSmall){
+                    secondSmall=firstSmall;
+                    firstSmall=x;
+                }
+                else if(x<secondSmall && x>firstSmall){
+                    secondSmall=x;
+                }
+                if(x>firstMax){
+                    secondMax=firstMax;
+                    firstMax=x;
+                }
+                else if(x>secondMax && x<firstMax){
+                    secondMax=x;
+                }
+            }
+            return `${secondMax}   ${secondSmall}`;
+        }
+        console.log(secondLargestAndSmalles(myArray));
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let numbers=[2,3,2,3,4,4,5,5,7,8,10,3,44,56];
+    let countArray={};
+    for(let x of numbers){
+        let tmp;
+        if(countArray[x]){
+            countArray[x]+=1;
+        }
+        else{
+            countArray[x]=1;
+        }
+    }
+    for(let x in countArray){
+        console.log(x+ " " +countArray[x]);
+        
+    }
+</script>
+</body>
+</html>

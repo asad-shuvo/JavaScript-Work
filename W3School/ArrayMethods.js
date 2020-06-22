@@ -79,47 +79,54 @@ console.log(companies);*/
 
 //Reduce
 
-const ageSum=age.reduce(function(total,age){
-    return total+age;
-},0);
+companies.sort((a,b)=>{
+    var x = a.category.toLowerCase();
+    var y = b.category.toLowerCase();
+    return x < y ? -1 : x > y ? 1 : 0;
+});
+console.log(companies);
 
-console.log(ageSum);
+// const ageSum=age.reduce(function(total,age){
+//     return total+age;
+// },0);
 
-const ageSum2=age.reduce((total,age2)=>total+age2,0);
+// console.log(ageSum);
+
+// const ageSum2=age.reduce((total,age2)=>total+age2,0);
 
 
-const companuTotal=companies.reduce((total,company)=>
-    total+(company.end-company.start),0);
-console.log(companuTotal);
+// const companuTotal=companies.reduce((total,company)=>
+//     total+(company.end-company.start),0);
+// console.log(companuTotal);
 
-/*
-//Every
+// /*
+// //Every
 
-let num=[45, 4, 9, 16, 25];
-const ans=num.every(n=>n>=20);
-console.log(ans);
+// let num=[45, 4, 9, 16, 25];
+// const ans=num.every(n=>n>=20);
+// console.log(ans);
 
-let num2=[45, 24, 29, 56, 25];
-const ans2=num2.every(n=>n>=20);
-console.log(ans2);
-*/
-/*
-//some
-var numbers = [45, 4, 9, 16, 25];
-var someOver18 = numbers.some(myFunction);
+// let num2=[45, 24, 29, 56, 25];
+// const ans2=num2.every(n=>n>=20);
+// console.log(ans2);
+// */
+// /*
+// //some
+// var numbers = [45, 4, 9, 16, 25];
+// var someOver18 = numbers.some(myFunction);
 
-function myFunction(value, index, array) {
-  return value > 18;
-}
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
 
-//indexOF
-var fruits = ["Apple", "Orange", "Apple", "Mango"];
-var a = fruits.indexOf("Apple");
-console.log(a);
-*/
-var numbers = [45, 4, 9, 16, 25];
-const ret=numbers.find(n=>n>=20);
-console.log(ret);
+// //indexOF
+// var fruits = ["Apple", "Orange", "Apple", "Mango"];
+// var a = fruits.indexOf("Apple");
+// console.log(a);
+// */
+// var numbers = [45, 4, 9, 16, 25];
+// const ret=numbers.find(n=>n>=20);
+// console.log(ret);
 
 
 
